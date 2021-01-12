@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .wrapper
+    h1 www2pdf
+    form(action='/2pdf/' method='post')
+      .searchBar
+        input.searchInput(id='url' type='text' placeholder='Enter a url...')
+        button.submitButton(type='submit')
+          span.material-icons picture_as_pdf
+
