@@ -3,9 +3,9 @@ extends layout
 block content
   .wrapper
     h1 www2pdf
-    form(action='/2pdf/' method='post')
+    form(action='/2pdf' method='get')
       .searchBar
-        input.searchInput(id='url' type='text' placeholder='Enter a url...')
+        input.searchInput(name='url' type='text' placeholder='Enter a url...')
         button.submitButton(type='submit')
           span.material-icons picture_as_pdf
 
